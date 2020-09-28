@@ -37,6 +37,16 @@ padding-right:15px;
 display: inline-block;
 vertical-align: middle;
 }
+.navbar-item:hover{
+cursor: pointer;
+text-decoration: underline;
+}
+.icon img{
+opacity:0.55;
+}
+.icon:hover img{
+opacity:1;
+}
 .content {
 grid-area: content;
 justify-self: center;

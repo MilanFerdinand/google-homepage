@@ -1,0 +1,42 @@
+html, body {
+width: 100%;
+height: 100%;
+font-family: arial, sans-serif;
+}
+body {
+margin: 0;
+background-color: #fff;
+}
+.wrapper {
+display: grid;
+min-height: 100%;
+grid-template-rows: auto 1fr auto;
+grid-template-columns: auto;
+grid-template-areas:
+"navbar"
+"content"
+"footer";
+color: #444;
+}
+.navbar {
+grid-area: navbar;
+margin-top:15px;
+color:rgba(0,0,0,0.87);
+justify-self: end;
+padding-left: 30px;
+padding-right: 30px;
+font-size:13px;
+}
+.navbar-item{
+padding-right:15px;
+}
+.content {
+grid-area: content;
+justify-self: center;
+align-self: center;
+}
+.footer{
+grid-area: footer;
+background-color: #f2f2f2;
+justify-items: start;
+}

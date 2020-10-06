@@ -48,38 +48,40 @@ opacity:0.55;
 opacity:1;
 }
 .search {
+margin-top: -450px;
 display: grid;
 grid-area: search;
 justify-content: center;
 align-content: center;
 }
-.search img{
+.logo{
 margin: auto;
 margin-bottom:20px;
 }
 .search-wrapper {
-margin: auto;
+position: relative;
 display: flex;
 }
 .search-bar{
-padding-top:6px;
 background-color: #fff;
 width: 584px;
 height: 46px;
-display: flex;
-padding: 5px 8px 0 16px;
-padding-left: 14px;
+padding: 3px 8px 0 42px;
 border: 1px solid #dfe1e5;
 border-radius: 24px;
 }
 .search-icon {
-display: flex;
-width: 20px;
-height: 20px;
+position: absolute;
+width: 16px;
+height: 16px;
+margin-top:18px;
 margin-left: 13px;
-background-image: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
-background-position: -250px -36px;
+margin-right: 13px;
 opacity: .30;
+}
+.search-bar:hover, .search-bar:focus {
+border: none;
+box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.16);
 }
 .footer{
 display:grid;
